@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import queryString from 'query-string'
+import  queryString  from 'query-string'
 
 import { useForm } from '../../hooks/useForm'
 import { HeroCard } from '../components'
@@ -37,7 +37,7 @@ export const SearchPage = () => {
           <h4> Searching </h4>
           <hr />
 
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} role='form'>
             <input
               type="text"
               name="searchText"
